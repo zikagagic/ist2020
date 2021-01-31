@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Oglasi>
+    <!--prvi oglas-->
+    <Oglas kategorija="Automobili">
+        <datumIsteka>
+            <dan>28</dan>
+            <mesec>2</mesec>
+            <godina>2021</godina>
+        </datumIsteka>
+        <cena valuta="eur">2300</cena>
+        <tekstOglasa>Zastava Yugo Cabrio 1996. godište</tekstOglasa>
+        <tag>
+            <tag1>Automobili</tag1>
+            <tag2>Yugo</tag2>
+            <tag3>Kabriolet</tag3>
+            <tag4>Kladovo</tag4>
+        </tag>
+        <email tip="privatni">majstorDragan@gmail.com</email>
+    </Oglas>
+    <!--drugi oglas-->
+    <Oglas kategorija="Alati">
+        <datumIsteka>
+            <dan>1</dan>
+            <mesec>3</mesec>
+            <godina>2021</godina>
+        </datumIsteka>
+        <cena valuta="din">5.800</cena>
+        <tekstOglasa>Makita aku busilica-srafilica12v+18 delova ili 24v+18 delova</tekstOglasa>    
+        <tag>
+            <tag1>Bušilica</tag1>
+            <tag2>Makita</tag2>  
+            <tag3>Kragujevac</tag3>
+        </tag>
+        <email tip="privatni">marko123@gmail.com</email>
+    </Oglas>
+    <!--treci oglas-->
+    <Oglas kategorija="Grafičke kartice">
+        <datumIsteka>
+            <dan>15</dan>
+            <mesec>2</mesec>
+            <godina>2021</godina>
+        </datumIsteka>
+        <cena valuta="eur">950</cena>
+        <tekstOglasa>SAPPHIRE 11305-02-20G RX 6800 16GB GDDR6 PULSE PCIE</tekstOglasa>
+        <tag>
+            <tag1>AMD</tag1>
+            <tag2>Sapphire</tag2>
+            <tag3>Beograd</tag3>            
+        </tag>
+        <email tip="službeni">techshopBG@gmail.com</email>
+    </Oglas>
+    <!--cetvrti oglas-->
+    <Oglas kategorija="Automobil">
+        <datumIsteka>
+            <dan>5</dan>
+            <mesec>5</mesec>
+            <godina>2021</godina>
+        </datumIsteka>
+        <cena valuta="eur">1.700</cena>
+        <tekstOglasa>Renault Megane 1.4</tekstOglasa>
+        <tag>
+            <tag1>Renault</tag1>
+            <tag2>Megane</tag2>
+            <tag3>Beograd</tag3>
+            <tag4>Euro 3</tag4>
+        </tag>
+        <email tip="službeni">prodajaVozila@gmail.com</email>
+    </Oglas>
+    <!--peti oglas-->
+    <Oglas kategorija="Podučavanje">
+        <datumIsteka>
+            <dan>30</dan>
+            <mesec>4</mesec>
+            <godina>2021</godina>
+        </datumIsteka>
+        <cena valuta="din">1500</cena>
+        <tekstOglasa>ONLINE Časovi Klavirne Harmonike i Klavijature </tekstOglasa>
+        <tag>
+            <tag1>Klavijatura</tag1>
+            <tag2>Online</tag2>
+            <tag3>Harmonika</tag3>
+            <tag4>Časovi</tag4>
+        </tag>
+        <email tip="privatni">manojlovicfishing@gmail.com</email>
+    </Oglas>
+</Oglasi>
