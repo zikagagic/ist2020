@@ -50,7 +50,7 @@
         <email tip="službeni">techshopBG@gmail.com</email>
     </Oglas>
     <!--cetvrti oglas-->
-    <Oglas kategorija="Automobil">
+    <Oglas kategorija="Automobili">
         <datumIsteka>
             <dan>5</dan>
             <mesec>5</mesec>
