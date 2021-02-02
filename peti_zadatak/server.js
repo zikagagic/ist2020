@@ -3,6 +3,53 @@ const http = require('http');
 const url = require('url');
 const querystring = require('query-string');
 const PATH = "www/";
+let oglasi=[
+{
+    'id': 1,
+    'kategorija' : "Automobili",
+    'datumIsteka': "2-7-2021",
+    'cena': "2000 eur",
+    'tekstOglasa': "Alfa Romeo 147, 1.6ts 105KS. Odrzavan redovno, veliki servis uradjen pre 2000km.",
+    'tag' : "Alfa Romeo",
+    'email' : "ristic.017@gmail.com"
+},
+{
+    'id': 2,
+    'kategorija' : "Grafičke kartice",
+    'datumIsteka': "6-12-2021",
+    'cena': "22000 din",
+    'tekstOglasa': "Bosch udarna busilica 1500 watt, koriscena iskljucivo za kucnu upotrebu.",
+    'tag' : "bosch",
+    'email' : "mirko@hotmail.com"
+},
+{
+    'id': 3,
+    'kategorija' : "Alati",
+    'datumIsteka': "12-8-2022",
+    'cena': "28000 din",
+    'tekstOglasa': "Bosch brusilica 12000 o/min, profesionalna i izuzetno snazna.",
+    'tag' : "bosch",
+    'email' : "vlada@hotmail.com"
+},
+{
+    'id': 4,
+    'kategorija' : "Poducavanje",
+    'datumIsteka': "22-11-2022",
+    'cena': "1500 din",
+    'tekstOglasa': "Diplomirani filolog poducava engleski jezik kandidate do kategorije B2. Online ili uzivo u Vranju.",
+    'tag' : "engleski",
+    'email' : "jelena@hotmail.com"
+},
+{
+    'id': 5,
+    'kategorija' : "Automobili",
+    'datumIsteka': "20-11-2021",
+    'cena': "1500 eur",
+    'tekstOglasa': "BMW 320, 2005. godiste, plave boje, vise informacija na broj telefona.",
+    'tag' : "BMW",
+    'email' : "dragan@gmail.com"
+}
+]
 const server=http.createServer(function (req, res){    
     let urlObj = url.parse(req.url,true,false);
     if (req.method == "GET"){
@@ -180,7 +227,13 @@ const server=http.createServer(function (req, res){
 
 const port=3000;
 const host='127.0.0.1';
-
+server.listen(port,function(error){
+    if(error){
+        console.log('Konekcija nije uspesna', error)
+    }else{
+    console.log(`Server radi na adresi: http://${host}:${port}`)
+    }
+})
 
 function sviOglasi(){
     return oglasi;
