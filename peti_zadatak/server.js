@@ -33,7 +33,7 @@ let oglasi=[
 },
 {
     'id': 4,
-    'kategorija' : "Grafičke kartice",
+    'kategorija' : "Automobili",
     'datumIsteka': "5-5-2021",
     'cena': "1700 eur",
     'tekstOglasa': "Renault Megane 1.4",
