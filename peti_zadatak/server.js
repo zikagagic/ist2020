@@ -7,48 +7,49 @@ let oglasi=[
 {
     'id': 1,
     'kategorija' : "Automobili",
-    'datumIsteka': "2-7-2021",
-    'cena': "2000 eur",
-    'tekstOglasa': "Alfa Romeo 147, 1.6ts 105KS. Odrzavan redovno, veliki servis uradjen pre 2000km.",
-    'tag' : "Alfa Romeo",
-    'email' : "ristic.017@gmail.com"
+    'datumIsteka': "28-2-2021",
+    'cena': "2300 eur",
+    'tekstOglasa': "Zastava Yugo Cabrio 1996. godište",
+    'tag' : "Yugo",
+    'email' : "majstorDragan@gmail.com"
 },
 {
     'id': 2,
-    'kategorija' : "Grafičke kartice",
+    'kategorija' : "Alati",
     'datumIsteka': "6-12-2021",
     'cena': "22000 din",
-    'tekstOglasa': "Bosch udarna busilica 1500 watt, koriscena iskljucivo za kucnu upotrebu.",
-    'tag' : "bosch",
-    'email' : "mirko@hotmail.com"
+    'tekstOglasa': "Makita aku busilica-srafilica12v+18 delova ili 24v+18 delova",
+    'tag' : "Makita",
+    'email' : "marko123@gmail.com"
 },
 {
     'id': 3,
-    'kategorija' : "Alati",
-    'datumIsteka': "12-8-2022",
-    'cena': "28000 din",
-    'tekstOglasa': "Bosch brusilica 12000 o/min, profesionalna i izuzetno snazna.",
-    'tag' : "bosch",
-    'email' : "vlada@hotmail.com"
+    'kategorija' : "Grafičke kartice",
+    'datumIsteka': "15-2-2021",
+    'cena': "930 eur",
+    'tekstOglasa': "SAPPHIRE 11305-02-20G RX 6800 16GB GDDR6 PULSE PCIE",
+    'tag' : "AMD",
+    'email' : "techshopBG@gmail.com"
 },
 {
     'id': 4,
-    'kategorija' : "Poducavanje",
-    'datumIsteka': "22-11-2022",
-    'cena': "1500 din",
-    'tekstOglasa': "Diplomirani filolog poducava engleski jezik kandidate do kategorije B2. Online ili uzivo u Vranju.",
-    'tag' : "engleski",
-    'email' : "jelena@hotmail.com"
+    'kategorija' : "Grafičke kartice",
+    'datumIsteka': "5-5-2021",
+    'cena': "1700 eur",
+    'tekstOglasa': "Renault Megane 1.4",
+    'tag' : "AMD",
+    'email' : "prodajaVozila@gmail.com"
 },
 {
     'id': 5,
-    'kategorija' : "Automobili",
-    'datumIsteka': "20-11-2021",
-    'cena': "1500 eur",
-    'tekstOglasa': "BMW 320, 2005. godiste, plave boje, vise informacija na broj telefona.",
-    'tag' : "BMW",
-    'email' : "dragan@gmail.com"
+    'kategorija' : "Podučavanje",
+    'datumIsteka': "30-4-2021",
+    'cena': "1500 din",
+    'tekstOglasa': "ONLINE Časovi Klavirne Harmonike i Klavijature",
+    'tag' : "Klavijatura",
+    'email' : "manojlovicfishing@gmail.com"
 }
+
 ]
 const server=http.createServer(function (req, res){    
     let urlObj = url.parse(req.url,true,false);
