@@ -49,12 +49,11 @@ let oglasi=[
     'tag' : "Klavijatura",
     'email' : "manojlovicfishing@gmail.com"
 }
-
 ]
 const server=http.createServer(function (req, res){    
     let urlObj = url.parse(req.url,true,false);
     if (req.method == "GET"){
-        if (urlObj.pathname == "/svi-oglasi"){ 
+        if (urlObj.pathname == "/svi-oglasi"||urlObj.pathname === '/' ){ 
             response = sviOglasi();
             res.write(`
                 <!DOCTYPE html>
@@ -122,10 +121,10 @@ const server=http.createServer(function (req, res){
             `);
         }
         if (urlObj.pathname == "/proba"){ 
-            res.writeHead(302, {
+            response.writeHead(302, {
                 'Location': '/svi-oglasi'
             });
-            res.end();
+            response.end();
         }
         if (urlObj.pathname == "/postavi-tekstOglasa"){
             let oglas = oglasi.find(x => x.id == urlObj.query.id);
@@ -167,7 +166,7 @@ const server=http.createServer(function (req, res){
                         ID: <input type='number' name='id'><br><br>
                         Kategorija: <select name="kategorija" id="kategorija">
                                         <option value="Automobili">Automobili</option>
-                                        <option value="Stanovi">Stanovi</option>
+                                        <option value="Graficke kartice">Stanovi</option>
                                         <option value="Alati">Alati</option>
                                         <option value="Poducavanje">Poducavanje</option>
                                     </select><br><br>
@@ -186,7 +185,7 @@ const server=http.createServer(function (req, res){
     else if(req.method == "POST") {
         if (urlObj.pathname == "/postavi-tekstOglasa"){
             var body = '';
-                req.on('data', function (data) {
+            req.on('data', function (data) {
                 body += data;
             });
             req.on('end', function () {
@@ -199,7 +198,7 @@ const server=http.createServer(function (req, res){
         }
         if (urlObj.pathname == "/obrisi-oglas"){
             var body = '';
-                req.on('data', function (data) {
+            req.on('data', function (data) {
                 body += data;
             });
             req.on('end', function () {
@@ -212,7 +211,7 @@ const server=http.createServer(function (req, res){
         }
         if (urlObj.pathname == "/dodaj-oglas"){
             var body = '';
-                req.on('data', function (data) {
+            req.on('data', function (data) {
                 body += data;
             });
             req.on('end', function () {
